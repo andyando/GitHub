@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://mapshare.maps.vic.gov.au/" />
+<title>IPSM_TC05_Locality_Legenbd and LGA</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">IPSM_TC05_Locality_Legenbd and LGA</td></tr>
+</thead><tbody>
+<tr>
+	<td>setTimeout</td>
+	<td>2000000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>C:\Data\Screenshots\</td>
+	<td>OutputPath</td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>new Date().getDate()	</td>
+	<td>Day</td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>new Date().getMonth() +1	</td>
+	<td>Month</td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>new Date().getFullYear()	</td>
+	<td>Year</td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>javascript{(new Date().getHours()+&quot;&quot; + new Date().getMinutes() + &quot;&quot; + new Date().getSeconds())}</td>
+	<td>Time</td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>/vicplan/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>//div[2]/div/div/div/div/div/h2/span[3]</td>
+	<td>Disclaimer</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>captureEntirePageScreenshot</td>
+	<td>${OutputPath}TC05_Disclaimer Text(${Day}-${Month}-${Year}_${Time}).png</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=button.button.button-right</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>captureEntirePageScreenshot</td>
+	<td>${OutputPath}TC05_Launch Page(${Day}-${Month}-${Year}_${Time}).png</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[15]/div/div/button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>name=search</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAt</td>
+	<td>name=search</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>sendKeys</td>
+	<td>name=search</td>
+	<td> </td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>name=search</td>
+	<td></td>
+</tr>
+<tr>
+	<td>sendKeys</td>
+	<td>name=search</td>
+	<td>Kew</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>name=search</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForVisible</td>
+	<td>//div[@id='map-container']/div[3]/div/div/span/div/div/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='map-container']/div[3]/div/div/span/div/div/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>5000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>captureEntirePageScreenshot</td>
+	<td>${OutputPath}TC05_Locality_Zones${Day}-${Month}-${Year}_${Time}).png</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=button.toolbar-item.tool</td>
+	<td></td>
+</tr>
+<tr>
+	<td>captureEntirePageScreenshot</td>
+	<td>${OutputPath}TC05_Locality_Zones_Legend(${Day}-${Month}-${Year}_${Time}).png</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//li/div/ul/li/button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//li/div/ul/li[2]/button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>captureEntirePageScreenshot</td>
+	<td>${OutputPath}TC05_Locality_Overlays_Legend(${Day}-${Month}-${Year}_${Time}).png</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//li/div/ul/li[2]/button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>captureEntirePageScreenshot</td>
+	<td>${OutputPath}TC05_Locality_LGA(${Day}-${Month}-${Year}_${Time}).png</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

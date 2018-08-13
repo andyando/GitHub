@@ -1,0 +1,536 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://mapshare.maps.vic.gov.au/" />
+<title>IPSM_TC11_Street Address_Print with Zones AND Overlays</title>
+
+<!--[if gte mso 9]><xml>
+<mso:CustomDocumentProperties>
+<mso:Phase msdt:dt="string">12</mso:Phase>
+<mso:Shakeout msdt:dt="string">11</mso:Shakeout>
+<mso:Section msdt:dt="string"></mso:Section>
+<mso:Reference_x0020_Number msdt:dt="string"></mso:Reference_x0020_Number>
+<mso:ld508a88e6264ce89693af80a72862cb msdt:dt="string"></mso:ld508a88e6264ce89693af80a72862cb>
+<mso:Language msdt:dt="string">English</mso:Language>
+<mso:Group1 msdt:dt="string">5;#Planning|a27341dd-7be7-4882-a552-a667d667e276</mso:Group1>
+<mso:n771d69a070c4babbf278c67c8a2b859 msdt:dt="string">Forward Policy and Business Strategy|8390fb7a-894d-4536-a591-336c8a33878d</mso:n771d69a070c4babbf278c67c8a2b859>
+<mso:mfe9accc5a0b4653a7b513b67ffd122d msdt:dt="string">Smart Planning|b4e50920-dacf-45ad-ba46-4844d4908280</mso:mfe9accc5a0b4653a7b513b67ffd122d>
+<mso:Dissemination_x0020_Limiting_x0020_Marker msdt:dt="string">2;#FOUO|955eb6fc-b35a-4808-8aa5-31e514fa3f26</mso:Dissemination_x0020_Limiting_x0020_Marker>
+<mso:RoutingRuleDescription msdt:dt="string"></mso:RoutingRuleDescription>
+<mso:Agency msdt:dt="string">1;#Department of Environment, Land, Water and Planning|607a3f87-1228-4cd9-82a5-076aa8776274</mso:Agency>
+<mso:ic50d0a05a8e4d9791dac67f8a1e716c msdt:dt="string">Planning|a27341dd-7be7-4882-a552-a667d667e276</mso:ic50d0a05a8e4d9791dac67f8a1e716c>
+<mso:Security_x0020_Classification msdt:dt="string">3;#Unclassified|7fa379f4-4aba-4692-ab80-7d39d3a23cf4</mso:Security_x0020_Classification>
+<mso:fb3179c379644f499d7166d0c985669b msdt:dt="string">FOUO|955eb6fc-b35a-4808-8aa5-31e514fa3f26</mso:fb3179c379644f499d7166d0c985669b>
+<mso:Project_x0020_Name msdt:dt="string">1</mso:Project_x0020_Name>
+<mso:Reference_x0020_Type msdt:dt="string"></mso:Reference_x0020_Type>
+<mso:Sub-Section msdt:dt="string"></mso:Sub-Section>
+<mso:TaxCatchAll msdt:dt="string">6;#Forward Policy and Business Strategy|8390fb7a-894d-4536-a591-336c8a33878d;#5;#Planning|a27341dd-7be7-4882-a552-a667d667e276;#4;#Smart Planning|b4e50920-dacf-45ad-ba46-4844d4908280;#3;#Unclassified|7fa379f4-4aba-4692-ab80-7d39d3a23cf4;#2;#FOUO|955eb6fc-b35a-4808-8aa5-31e514fa3f26;#1;#Department of Environment, Land, Water and Planning|607a3f87-1228-4cd9-82a5-076aa8776274</mso:TaxCatchAll>
+<mso:k1bd994a94c2413797db3bab8f123f6f msdt:dt="string"></mso:k1bd994a94c2413797db3bab8f123f6f>
+<mso:a25c4e3633654d669cbaa09ae6b70789 msdt:dt="string"></mso:a25c4e3633654d669cbaa09ae6b70789>
+<mso:Division msdt:dt="string">6;#Forward Policy and Business Strategy|8390fb7a-894d-4536-a591-336c8a33878d</mso:Division>
+<mso:Branch msdt:dt="string">4;#Smart Planning|b4e50920-dacf-45ad-ba46-4844d4908280</mso:Branch>
+<mso:pd01c257034b4e86b1f58279a3bd54c6 msdt:dt="string">Unclassified|7fa379f4-4aba-4692-ab80-7d39d3a23cf4</mso:pd01c257034b4e86b1f58279a3bd54c6>
+<mso:ece32f50ba964e1fbf627a9d83fe6c01 msdt:dt="string">Department of Environment, Land, Water and Planning|607a3f87-1228-4cd9-82a5-076aa8776274</mso:ece32f50ba964e1fbf627a9d83fe6c01>
+</mso:CustomDocumentProperties>
+</xml><![endif]-->
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">blhblahblah</td></tr>
+</thead><tbody>
+<tr>
+	<td>setTimeout</td>
+	<td>2000000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>C:\Data\Screenshots\</td>
+	<td>OutputPath</td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>new Date().getDate()</td>
+	<td>Day</td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>new Date().getMonth() +1</td>
+	<td>Month</td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>new Date().getFullYear()</td>
+	<td>Year</td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>javascript{(new Date().getHours()+&quot;&quot; + new Date().getMinutes() + &quot;&quot; + new Date().getSeconds())}</td>
+	<td>Time</td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>/vicplan/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>6000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>//div[2]/div/div/div/div/div/h2/span[3]</td>
+	<td>Disclaimer</td>
+</tr>
+<tr>
+	<td>captureEntirePageScreenshot</td>
+	<td>${OutputPath}TC11_Disclaimer Text(${Day}-${Month}-${Year}_${Time}).png</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>css=button.button.button-right</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=button.button.button-right</td>
+	<td></td>
+</tr>
+<tr>
+	<td>captureEntirePageScreenshot</td>
+	<td>${OutputPath}TC11_Launch Page(${Day}-${Month}-${Year}_${Time}).png</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//div[15]/div/div/button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[15]/div/div/button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>name=search</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAt</td>
+	<td>name=search</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>sendKeys</td>
+	<td>name=search</td>
+	<td> </td>
+</tr>
+<tr>
+	<td>sendKeys</td>
+	<td>name=search</td>
+	<td>374 MT ALEXANDER ROAD TRAV</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>4000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>name=search</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForVisible</td>
+	<td>//div[@id='map-container']/div[3]/div/div/span/div/div/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//div[@id='map-container']/div[3]/div/div/span/div/div/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='map-container']/div[3]/div/div/span/div/div/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>captureEntirePageScreenshot</td>
+	<td>${OutputPath}TC11_Street Address_Property Information(${Day}-${Month}-${Year}_${Time}).png</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//li/div/ul/li[2]/button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//li/div/ul/li[2]/button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//li[5]/button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//li[5]/button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>5000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>captureEntirePageScreenshot</td>
+	<td>${OutputPath}TC11_Street Address_Print Map_A4 Landscape(${Day}-${Month}-${Year}_${Time}).png</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>css=button.button.print-button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=button.button.print-button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>css=div.print-complete.bound-visible &gt; div.bound-visible &gt; div.form-btns &gt; button.button.print-button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.print-complete.bound-visible &gt; div.bound-visible &gt; div.form-btns &gt; button.button.print-button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPopUp</td>
+	<td></td>
+	<td>30000</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectPopUp</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>captureEntirePageScreenshot</td>
+	<td>${OutputPath}TC11_Street Address_Map A4 Landscape(${Day}-${Month}-${Year}_${Time}).png</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>5000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>close</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectWindow</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>5000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectWindow</td>
+	<td>null</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=selectTemplate</td>
+	<td>A4 Portrait</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>5000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>captureEntirePageScreenshot</td>
+	<td>${OutputPath}TC11_Street Address_Print Map_A4 Portrait(${Day}-${Month}-${Year}_${Time}).png</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>css=button.button.print-button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=button.button.print-button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>css=div.print-complete.bound-visible &gt; div.bound-visible &gt; div.form-btns &gt; button.button.print-button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.print-complete.bound-visible &gt; div.bound-visible &gt; div.form-btns &gt; button.button.print-button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPopUp</td>
+	<td></td>
+	<td>30000</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectPopUp</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>captureEntirePageScreenshot</td>
+	<td>${OutputPath}TC11_Street Address_Map A4 Portrait(${Day}-${Month}-${Year}_${Time}).png</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>5000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>close</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectWindow</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>5000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectWindow</td>
+	<td>null</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=selectTemplate</td>
+	<td>A3 Landscape</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>5000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>captureEntirePageScreenshot</td>
+	<td>${OutputPath}TC11_Street Address_Print Map_A3 Landscape(${Day}-${Month}-${Year}_${Time}).png</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>css=button.button.print-button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=button.button.print-button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>css=div.print-complete.bound-visible &gt; div.bound-visible &gt; div.form-btns &gt; button.button.print-button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.print-complete.bound-visible &gt; div.bound-visible &gt; div.form-btns &gt; button.button.print-button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPopUp</td>
+	<td></td>
+	<td>30000</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectPopUp</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>captureEntirePageScreenshot</td>
+	<td>${OutputPath}TC11_Street Address_Map A3Landscape${Day}-${Month}-${Year}_${Time}).png</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>5000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>close</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectWindow</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>5000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=selectTemplate</td>
+	<td>A3 Portrait</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>4000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>captureEntirePageScreenshot</td>
+	<td>${OutputPath}TC11_Street Address_Print Map_A3 Portrait(${Day}-${Month}-${Year}_${Time}).png</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>css=button.button.print-button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=button.button.print-button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>css=div.print-complete.bound-visible &gt; div.bound-visible &gt; div.form-btns &gt; button.button.print-button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.print-complete.bound-visible &gt; div.bound-visible &gt; div.form-btns &gt; button.button.print-button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPopUp</td>
+	<td></td>
+	<td>30000</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectPopUp</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>captureEntirePageScreenshot</td>
+	<td>${OutputPath}TC11_Street Address_Map A3 Portrait(${Day}-${Month}-${Year}_${Time}).png</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>close</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectWindow</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>
